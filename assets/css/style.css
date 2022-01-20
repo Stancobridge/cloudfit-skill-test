@@ -1,0 +1,328 @@
+/* ======================================================
+  CSS FILE
+=========================================================*/
+
+/* 
+  Load Custom Fonts
+*/
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/Graphik/GraphikRegular.otf);
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url(../fonts/GTWalsheimPro/GTWalsheimPro-Regular.woff);
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro Bold";
+  src: url(../fonts/GTWalsheimPro/GTWalsheimPro-Bold.woff);
+}
+
+/* NORMALIZE CSS */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  display: block;
+}
+
+/* Fix H1 maring and Font Size */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  outline: none;
+}
+button,
+select {
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* CSS VARIABLES */
+:root {
+  --black-color: #3f403f;
+  --gray-color: #9b9b9b;
+  --light-gray: #e5e5e5;
+  --white-color: #ffffff;
+  --green-color: #06942a;
+  --light-green: rgba(6, 148, 42, 0.2);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Graphik;
+  font-size: 16px;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+input,
+button {
+  padding: 15px 25px;
+  background-color: var(--white-color);
+  border: 1px solid var(--light-gray);
+  font-family: inherit;
+  font-size: inherit;
+}
+input::placeholder {
+  color: var(--gray-color);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+/* HEADER CSS */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.563rem 0px;
+  align-items: center;
+}
+
+.link-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+.link-list > .link {
+  margin: 0px;
+}
+
+.link-list > .link {
+  margin-right: 2rem;
+}
+
+.link-list > .link:last-child {
+  margin-right: 0rem;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.link-btn {
+  background-color: var(--light-green);
+  border-radius: 50px;
+  /* width: 160px; */
+  padding: 10px 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.link-btn > a {
+  color: var(--green-color);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-container {
+  margin-top: 50px;
+}
+
+.hero-description {
+  /* background-color: red; */
+}
+.description-title {
+  font-family: "GT Walsheim Pro Bold";
+  font-weight: bold;
+  font-size: 48px;
+}
+.description-title > .title-green {
+  color: var(--green-color);
+}
+
+.description-content {
+  line-height: 32px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-container > div {
+  width: 50%;
+}
+
+.image-container > img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 100%;
+}
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.image-container {
+  width: 100%;
+  background-image: url(../img/hero-image.png);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+}
+
+.image-border {
+  width: 80%;
+  height: 700px;
+  border: 2px solid var(--green-color);
+  border-radius: 20px;
+  position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+}
+.hero-form {
+  display: flex;
+}
+
+.hero-search {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: none;
+  width: 60%;
+}
+
+.hero-location {
+  border-right: none;
+  border-left: none;
+}
+.hero-btn {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+  text-align: center;
+  border: 1px solid var(--green-color);
+}
+
+.location-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  border: 1px solid var(--light-gray);
+  border-right: none;
+  background-color: var(--white-color);
+}
+
+.company-title {
+  font-weight: bold;
+  margin: 40px 0px;
+}
+
+.companies-logo {
+  display: flex;
+  align-items: center;
+}
+
+.companies-logo > .company-logo {
+  margin-right: 2rem;
+}
+
+.companies-logo > .company-logo:last-child {
+  margin-right: 0rem;
+}
+
+.hero-curve {
+  height: 115%;
+  width: 65%;
+  background: rgb(243, 246, 247);
+  background: linear-gradient(
+    137deg,
+    rgba(243, 246, 247, 1) 0%,
+    rgba(242, 249, 244, 1) 20%
+  );
+  border-radius: 50px;
+  transform: rotate(-2deg) translate(-6px, 3px) skew(-2deg, 10deg);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transform: rotate(-2deg) translate(-6px, 3px) skew(-2deg, 10deg);
+  -moz-transform: rotate(-2deg) translate(-6px, 3px) skew(-2deg, 10deg);
+  -ms-transform: rotate(-2deg) translate(-6px, 3px) skew(-2deg, 10deg);
+  -o-transform: rotate(-2deg) translate(-6px, 3px) skew(-2deg, 10deg);
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}
