@@ -598,11 +598,16 @@ a:active {
 
 .client-companies {
   display: flex;
-  padding: 150px 0px;
+  padding-top: 150px;
+  padding-bottom: 350px;
+  background-color: var(--light-green);
+  margin-top: 100px;
+  justify-content: space-between;
 }
 
 .client-companies-decription {
-  width: 50%;
+  width: 60%;
+  padding: 0px 100px;
 }
 .client-companies-title {
   font-family: "GT Walsheim Pro Bold";
@@ -620,4 +625,62 @@ a:active {
   height: 28px;
   display: block;
   border-bottom: 10px solid var(--light-green);
+}
+.client-companies-logos {
+  width: 30%;
+  position: relative;
+}
+
+.client-logo {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+}
+.client-logo:nth-child(3) {
+  right: 0px;
+  top: 0px;
+}
+
+.client-logo:nth-child(2) {
+  right: 35%;
+  top: 100px;
+}
+.client-logo:nth-child(4) {
+  top: 200px;
+}
+.client-logo:nth-child(5) {
+  top: 300px;
+  right: 40%;
+}
+
+.client-logo:nth-child(6) {
+  top: 200px;
+  right: 5%;
+}
+
+.client-logo:nth-child(7) {
+  top: 400px;
+  left: 5%;
+}
+
+.client-logo:nth-child(8) {
+  top: 400px;
+  right: 10%;
+}
+
+.testimonials {
+  margin-top: 100px;
+}
+.testimonials-title {
+  max-width: 470px;
+  font-family: "GT Walsheim Pro Bold";
 }
