@@ -796,3 +796,49 @@ a:active {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
+
+.get-job-footer {
+  border-top: 1px solid var(--light-gray);
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 40px;
+}
+.footer-container > div {
+  width: 20%;
+}
+
+.links-header {
+  font-weight: bold;
+}
+.footer-links > ul,
+.footer-links > ul > li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 30px;
+}
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials > div {
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
