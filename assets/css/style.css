@@ -96,6 +96,7 @@ button:-moz-focusring,
   --black-color: #3f403f;
   --gray-color: #9b9b9b;
   --light-gray: #e5e5e5;
+  --lighter-gray: #f4f5f9;
   --white-color: #ffffff;
   --green-color: #06942a;
   --light-green: rgba(6, 148, 42, 0.2);
@@ -108,6 +109,7 @@ body {
   font-size: 16px;
   color: var(--black-color);
   background-color: var(--white-color);
+  overflow-x: hidden;
 }
 
 input,
@@ -178,6 +180,8 @@ a:active {
 
 .hero {
   position: relative;
+  min-height: 1000px;
+  /* overflow: auto; */
 }
 
 .hero-container {
@@ -304,7 +308,7 @@ a:active {
 }
 
 .hero-curve {
-  height: 115%;
+  height: 100%;
   width: 65%;
   background: rgb(243, 246, 247);
   background: linear-gradient(
@@ -325,4 +329,165 @@ a:active {
   position: absolute;
   top: -100px;
   z-index: -1;
+}
+
+.recommended-jobs {
+  margin-top: 120px;
+}
+
+.recommended-jobs > .recommended-job-title {
+  font-family: "GT Walsheim Pro Bold";
+  font-weight: bold;
+  font-size: 36px;
+}
+.jobs {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  /* right: 200px; */
+}
+
+.job-card {
+  width: 320px;
+  min-width: 350px;
+  padding: 20px 0px;
+  box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.jobs > .job-card {
+  margin-right: 3rem;
+}
+
+.jobs > .job-card:last-child {
+  margin-right: 0rem;
+}
+
+.job-card .card-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overflow-show {
+  /* overflow: auto; */
+}
+.card-margin {
+  margin: 0px 30px;
+}
+.card-header-title {
+  background-color: var(--lighter-gray);
+  padding: 8px 30px;
+  color: var(--gray-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.card-footer {
+  border-top: 1px solid var(--light-gray);
+  padding: 20px 0px;
+}
+.company-name {
+  font-weight: bold;
+}
+
+.card-links,
+.card-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-apply > a {
+  color: var(--green-color);
+  font-weight: bold;
+  padding: 8px 20px;
+  display: block;
+  border-radius: 20px;
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -ms-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.card-apply > a:hover {
+  background-color: var(--light-green);
+}
+
+.card-paging {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.how-it-works {
+  display: flex;
+  max-height: 1000px;
+}
+
+.how-it-works-images {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: green;
+}
+
+.how-it-works-image-holder {
+  width: 50%;
+  box-shadow: 0px 10px 30px rgba(6, 148, 42, 0.08);
+  margin-bottom: 100px;
+}
+.how-it-works-image-holder img {
+  border-radius: 20px 20px 0px 0px;
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  -ms-border-radius: 20px 20px 0px 0px;
+  -o-border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+.how-it-works-image-holder:nth-child(2) {
+  /* right: -40px;
+  position: relative; */
+  margin-left: 40px;
+}
+.how-it-works-image-holder:nth-child(3) {
+  margin-left: 40px;
+}
+.how-it-works-image-holder:nth-child(1) {
+  margin-right: 40px;
+}
+
+.how-it-works-descriptions {
+  width: 40%;
+  /* background-color: red; */
+}
+.how-it-works-title {
+  font-family: "GT Walsheim Pro Bold";
+  font-weight: bold;
+  font-size: 36px;
 }
