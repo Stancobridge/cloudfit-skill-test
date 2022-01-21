@@ -110,6 +110,7 @@ button:-moz-focusring,
   --white-color: #ffffff;
   --green-color: #06942a;
   --light-green: rgba(6, 148, 42, 0.2);
+  --lighter-green: #f2f9f4;
 }
 
 body {
@@ -119,7 +120,7 @@ body {
   font-size: 16px;
   color: var(--black-color);
   background-color: var(--white-color);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   line-height: 32px;
 }
 
@@ -199,9 +200,6 @@ a:active {
   margin-top: 50px;
 }
 
-.hero-description {
-  /* background-color: red; */
-}
 .description-title {
   font-family: "GT Walsheim Pro Bold";
   font-weight: bold;
@@ -377,9 +375,6 @@ a:active {
   justify-content: flex-end;
 }
 
-.overflow-show {
-  /* overflow: auto; */
-}
 .card-margin {
   margin: 0px 30px;
 }
@@ -602,11 +597,20 @@ a:active {
 }
 
 .client-companies {
-  display: flex;
+  margin-top: 100px;
+  position: relative;
+}
+.light-bg {
+  background-color: var(--lighter-green);
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.companies-container {
   padding-top: 150px;
   padding-bottom: 350px;
-  background-color: var(--light-green);
-  margin-top: 100px;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -683,7 +687,7 @@ a:active {
 }
 
 .testimonials {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .testimonials-title {
   max-width: 470px;
@@ -763,7 +767,7 @@ a:active {
   padding: 100px 50px;
   box-shadow: inset 0 0 0 2000px rgba(122, 122, 122, 0.37);
   display: flex;
-  margin-top: 100px;
+  margin-top: 150px;
   justify-content: flex-end;
   border-radius: 30px;
   -webkit-border-radius: 30px;
